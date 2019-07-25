@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" 
+        Unicod="U+00A9, UTF-8: C2 A9"
+        Unicode="U+221A, UTF-8: E2 88 9A"
+        Unicode="U+1F605, UTF-8: F0 9F 98 85"
+        Unicode="U+00F7, UTF-8: C3 B7">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link 
+        href="https://fonts.googleapis.com/css?family=Dokdo|Indie+Flower|Shadows+Into+Light" 
+        rel="stylesheet">
+    <title>
+        The Midpoint Formula 
+    </title>
+    <link rel="stylesheet" HREF="./styles.css">
+</head>
+<body>
+    <h1 id="h1">The Midpoint Formula</h1>
+        <p>
+            The Midpoint Formula is used to locate the exact middle
+            distance between two objects, or two locations. 
+            <br><br>
+            It is typically implemented when it's the  easiest to use: 
+            <br>
+            when you have images that are sketched
+            on a grid or coordinate plane. 
+            <br>
+            This is because there are 
+            units of length created when we superimpose an image on
+            a grid and it makes calculations such as length very simple to make.
+        </p>
+        <br>
+        <img src="./images/midpointFormula.png" alt="midpt fmla" id="midpointFormulaImg" />
+    </h1>
+    <p id="inputs1">
+        To locate a point (x, y) at the exact middle of a segment on a coordinate plane, average 
+        each pair of corresponding coordinates to calculate the midpoint's location at: (x<sub>m</sub>, y<sub>m</sub>) 
+        <br> 
+        where m = "midpoint".
+    </p>
+<!-- trigger/open the modal box -->
+    <button id="myButton">
+        Additional Explanations
+    </button>
+<!-- THE MODAL BOX -->
+    <div id="myModal" class="modal">
+<!-- MODAL BOX'S CONTENT INSIDE -->
+        <div class="modal-content">
+            <span class="close">Close</span>      <!-- &times; -->
+                <p>
+                    If you recall in math, calculating the average of two numbers will give you
+                    the number in the middle of your two values. 
+                    <br>
+                    For an everyday example, if you got an 80% on a test and a 100% on a second 
+                    test, the teacher will typically average the two scores and give you an overall grade 
+                    equal to that amount. This is the programming used behind the Gradebook Technology
+                    your teacher uses and the grades you earn in your classes. 
+                    <br>
+                        <div id="soWhat">
+                            <p>
+                                So what would your new grade be after the two scores are averaged?
+                                <br>
+                                It would be a 90% A-! Awesome!
+                            </p>
+                                <img src="images/sickday.png" alt="sickday" id="sickDay" />
+                            <p>
+                                So what would your grade be if you were absent and missed the third test?? 
+                                What would a zero being added into an 'Average' calculation do to your grade?
+                                <br><br>
+                                Let's investigate this. You would think it's just going to be the sum of your previous answer
+                                with a new value of 0%. 
+                                <br><br>
+                                Resulting in the following calculation, and resultant grade in the class:
+                                <br><br>
+                                90% + 0% = 90% 
+                                <br>
+                                90% ÷ 2 = 45% F 
+                                <br> Ouch! That's not good. 
+                                <br><br>
+                                So missing one test, can take your grade from a 90% A- to 45% F!!!  
+                                <br><br>
+                                Is this the same answer we would get if we started back at the beginning of the problem
+                                and considered the entire problem as a whole? Including all three test scores at once?
+                                <br>
+                                Well, let's investigate:
+                                80%, 100%, and a 0% are the three test scores.
+                                <br><br>
+                                The "Laws of Averaging" state: To calculate the average of more than two numbers,
+                                you must divide the sum of your numbers by how many numbers you sum. 
+                                <br>
+                                So in this instance, we have three test scores. Therefore, we will divide the 
+                                sum of the scores by 3.
+                                <br><br>
+                                80% + 100% + 0% = 180%
+                                <br>
+                                180% ÷ 3 = 60% D- hmmmm
+                                <br>
+                                Why are we getting two different answers? Personally i'd like get the second grade if it were me...
+                                60%! Atleast I'd still be passing.... 😅
+                            </p>
+                            <p>
+                                Long story short, its because PEMDAS comes into play due to multiple operations 
+                                (adding and dividing) being present in the same calculation. 
+                                <br> 
+                                A rule that applies to fractions and PEMDAS is:
+                                <br><br>
+                            </p>
+                            <p id="rule">
+                                Always combine the numerator values into one term <span style="text-decoration: underline">BEFORE</span> 
+                                dividing that total by the denominator.
+                            </p>
+                        </div>
+                </div> 
+            </div>
+        </div>
+<!-- CLOSE MODAL BOX -->
+    </div>
+    <footer id="footer">
+        ©2019 ALL THINGS MATH   ALL RIGHTS RESERVED
+    </footer>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+    <!-- <div id="inputs" >
+        <p> -->
+
+            <!-- Enter variable a<sup>2</sup> = <br>  
+            <input type="numeric" id="varA">   -->
+        <!-- </p>
+        <p>
+            Enter variable b<sup>2</sup> = <br>
+            <input type="numeric" id="varB">  
+        </p>
+    </div> 
+    <div>
+        <button type="submit" id="submitButton" onclick="answer( )">
+            SUBMIT
+        </button>
+    </div>
+    <p id="demo1"></p>
+    <p>
+        To check your answer, you can FOIL the binomials above and verify
+        that 
+        <br>
+        your answer results in the original problem that you started
+        with.
+        <br><br>
+        <p id="inputs1">
+            Remember: 
+            <span style="color:magenta">FOIL-ing</span> 
+            and 
+            <span style="color:magenta">Factoring</span> 
+            <br>
+            are 
+            <span style="text-decoration:underline">"Inverse Operations"</span>
+            <br>
+            Each one undoes the other.
+        </p>
+    </p>
+    <footer id="footer">
+        ©2019 ALL THINGS MATH   ALL RIGHTS RESERVED
+    </footer>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html> -->
