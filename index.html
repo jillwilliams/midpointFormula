@@ -5,7 +5,8 @@
         Unicod="U+00A9, UTF-8: C2 A9"
         Unicode="U+221A, UTF-8: E2 88 9A"
         Unicode="U+1F605, UTF-8: F0 9F 98 85"
-        Unicode="U+00F7, UTF-8: C3 B7">
+        Unicode="U+00F7, UTF-8: C3 B7"
+        Unicode="U+27BE, UTF-8: E2 9E BE">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link 
         href="https://fonts.googleapis.com/css?family=Dokdo|Indie+Flower|Shadows+Into+Light" 
@@ -19,9 +20,9 @@
     <h1 id="h1">The Midpoint Formula</h1>
         <p>
             The Midpoint Formula is used to locate the exact middle
-            distance between two objects, or two locations. 
+            between two objects, or two locations. 
             <br><br>
-            It is typically implemented when it's the  easiest to use: 
+            It is typically implemented when it's the easiest to use: 
             <br>
             when you have images that are sketched
             on a grid or coordinate plane. 
@@ -39,85 +40,109 @@
         <br> 
         where m = "midpoint".
     </p>
-<!-- trigger/open the modal box -->
-    <button id="myButton">
-        Additional Explanations
-    </button>
-<!-- THE MODAL BOX -->
-    <div id="myModal" class="modal">
-<!-- MODAL BOX'S CONTENT INSIDE -->
-        <div class="modal-content">
-            <span class="close">Close</span>      <!-- &times; -->
-                <p>
-                    If you recall in math, calculating the average of two numbers will give you
-                    the number in the middle of your two values. 
-                    <br>
-                    For an everyday example, if you got an 80% on a test and a 100% on a second 
-                    test, the teacher will typically average the two scores and give you an overall grade 
-                    equal to that amount. This is the programming used behind the Gradebook Technology
-                    your teacher uses and the grades you earn in your classes. 
-                    <br>
-                        <div id="soWhat">
-                            <p>
-                                So what would your new grade be after the two scores are averaged?
-                                <br>
-                                It would be a 90% A-! Awesome!
-                            </p>
-                                <img src="images/sickday.png" alt="sickday" id="sickDay" />
-                            <p>
-                                So what would your grade be if you were absent and missed the third test?? 
-                                What would a zero being added into an 'Average' calculation do to your grade?
-                                <br><br>
-                                Let's investigate this. You would think it's just going to be the sum of your previous answer
-                                with a new value of 0%. 
-                                <br><br>
-                                Resulting in the following calculation, and resultant grade in the class:
-                                <br><br>
-                                90% + 0% = 90% 
-                                <br>
-                                90% ÷ 2 = 45% F 
-                                <br> Ouch! That's not good. 
-                                <br><br>
-                                So missing one test, can take your grade from a 90% A- to 45% F!!!  
-                                <br><br>
-                                Is this the same answer we would get if we started back at the beginning of the problem
-                                and considered the entire problem as a whole? Including all three test scores at once?
-                                <br>
-                                Well, let's investigate:
-                                80%, 100%, and a 0% are the three test scores.
-                                <br><br>
-                                The "Laws of Averaging" state: To calculate the average of more than two numbers,
-                                you must divide the sum of your numbers by how many numbers you sum. 
-                                <br>
-                                So in this instance, we have three test scores. Therefore, we will divide the 
-                                sum of the scores by 3.
-                                <br><br>
-                                80% + 100% + 0% = 180%
-                                <br>
-                                180% ÷ 3 = 60% D- hmmmm
-                                <br>
-                                Why are we getting two different answers? Personally i'd like get the second grade if it were me...
-                                60%! Atleast I'd still be passing.... 😅
-                            </p>
-                            <p>
-                                Long story short, its because PEMDAS comes into play due to multiple operations 
-                                (adding and dividing) being present in the same calculation. 
-                                <br> 
-                                A rule that applies to fractions and PEMDAS is:
-                                <br><br>
-                            </p>
-                            <p id="rule">
-                                Always combine the numerator values into one term <span style="text-decoration: underline">BEFORE</span> 
-                                dividing that total by the denominator.
-                            </p>
-                        </div>
-                </div> 
-            </div>
-        </div>
-<!-- CLOSE MODAL BOX -->
-    </div>
+    <p id="p1">
+    Additional Explanations:
+    </p>
+    <p>
+    If you recall in math, calculating the average of two numbers will give you
+    the number in the middle of your two values. 
+    <br>
+    For an everyday example, if you got an 80% on a test and a 100% on a second 
+    test, the teacher will typically average the two scores and give you an overall grade 
+    equal to that amount. This is the programming used behind the Gradebook Technology
+    your teacher uses and the grades you earn in your classes. 
+    <br>
+        <div id="soWhat">
+            <p>
+                So what would your new grade be after the two scores are averaged?
+                <br>
+                It would be a 90% A-! Awesome!
+            </p>
+                <img src="images/sickday.png" alt="sickday" id="sickDay" />
+            <p>
+                So what would your grade be if you were absent and missed the third test?? 
+                What would a zero being added into an 'Average' calculation do to your grade?
+                <br><br>
+                Let's investigate this. You would think it's just going to be the sum of your previous answer
+                with a new value of 0%. 
+                <br><br>
+                Resulting in the following calculation, and resultant grade in the class:
+                <br><br>
+                90% + 0% = 90% 
+                <br>
+                90% ÷ 2 = 45% F 
+                <br> Ouch! That's not good. 
+                <br><br>
+                So missing one test, can take your grade from a 90% A- to 45% F!!!  
+                <br><br>
+                Is this the same answer we would get if we started back at the beginning of the problem
+                and considered the entire problem as a whole? Including all three test scores at once?
+                <br>
+                Well, let's investigate:
+                80%, 100%, and a 0% are the three test scores.
+                <br><br>
+                The "Laws of Averaging" state: To calculate the average of more than two numbers,
+                you must divide the sum of your numbers by how many numbers you sum. 
+                <br>
+                So in this instance, we have three test scores. Therefore, we will divide the 
+                sum of the scores by 3.
+                <br><br>
+                80% + 100% + 0% = 180%
+                <br>
+                180% ÷ 3 = 60% D- hmmmm
+                <br>
+                Why are we getting two different answers? Personally i'd like get the second grade if it were me...
+                60%! Atleast I'd still be passing.... 😅
+            </p>
+            <p>
+                Long story short, its because PEMDAS comes into play due to multiple operations 
+                (adding and dividing) being present in the same calculation. 
+                <br> 
+                A rule that applies to fractions and PEMDAS is:
+                <br><br>
+            </p>
+            <p id="rule">
+                Always combine the numerator values into one term <span style="text-decoration: underline">BEFORE</span> 
+                dividing that total by the denominator.
+            </p>
+            <p>
+                Let's look at some examples:<br>
+                <span style="text-decoration: underline" font-family="Shadows Into Light">Example 1:</span><br>
+                Locate the Midpoint of the segment formed by point A at (4, 2) and point B at (8, 6).<br>
+            </p>
+            <p>
+                Solution: The midpoint formula tells us to average the 2 x-coordinates and average the two y-coordinates to get the midpoint's location.<br>
+                Averaging the x-coordinates gives us (4 + 8) ÷ 2.  Or 12 ÷ 2 = 6.<br>
+                Averaging the two y-coordinates gives us (2 + 6) ÷ 2 . Or 8 ÷ 2 = 4.<br><br>
+                The x-coordinate of the midpoint is at 6 and the y-coordinate is 4. As an ordered pair, we would write this as M = (6, 4) where M = midpoint.
+                <br>
+                Let's look at the graph of our three points and see if it looks correct.<br><br>
+                <img src="images/pic1.png" alt="graphed example" id="pic1" />
+                As you can see, the midpoint, represented by the red dot, is at the middle of the segment. So our answer is correct.<hr>
+            </p>
+            <p>
+                <span style="text-decoration: underline" font-family="Shadows Into Light">Example 2:</span><br>
+                Locate the Midpoint of the segment formed by point A at (6, -4) and point B at (-8, 2).<br>
+                Solution: Averaging the 2 x-coordinates we get (6 + -8) ÷ 2 ➾ -2 ÷ 2 = -1. <br>The x-coordinate of the midpoint is -1.<br>Averaging the two y-coordinates gives us (-4 + 2) ÷ 2 ➾ -2 ÷ 2 = -1.<br>The y-coordinate of the midpoint is -1.<br>Therefore the midpoint of the segment is at (-1, -1).<br>Let's look at the image on a graph to check our answer.<br><br>
+                <img src="images/pic2.png" alt="graphed example" id="pic2" />
+                Again we see that the midpoint is in the middle of the graphed segment AB.<br><hr>
+            </p>
+            <p>
+                <span style="text-decoration: underline" font-family="Shadows Into Light">Example 3:</span><br>
+                Locate the midpoint of the segment AB with endpoints A(6, 0) and B(0, 8).<br><br>
+                Solution:<br>
+                Average the x-coordinates: (6 + 0) ÷ 2 ➾ 6 ÷ 2 = 3.<br>
+                Average the y-coordinates: (0 + 8) ÷ 2 ➾ 8 ÷ 2 = 4.<br>
+                The midpoint is at (3, 4). Again, we will check our answer by graphing:<br>
+                <img src="images/pic3.png" alt="graphed example" id="pic3" /><br><br>
+                Although it is not necessary to graph your answer, it is a good way to check your solution. If the midpoint isn't in the middle of the segment, you will want to re-calculate your answers.
+            </p>
+
+
+            </p>
+        </div>    
     <footer id="footer">
-        ©2019 ALL THINGS MATH   ALL RIGHTS RESERVED
+        ©2020 ALL THINGS MATH   ALL RIGHTS RESERVED
     </footer>
 
     <script type="text/javascript" src="./script.js"></script>
@@ -127,46 +152,4 @@
 
 
 
-    <!-- <div id="inputs" >
-        <p> -->
-
-            <!-- Enter variable a<sup>2</sup> = <br>  
-            <input type="numeric" id="varA">   -->
-        <!-- </p>
-        <p>
-            Enter variable b<sup>2</sup> = <br>
-            <input type="numeric" id="varB">  
-        </p>
-    </div> 
-    <div>
-        <button type="submit" id="submitButton" onclick="answer( )">
-            SUBMIT
-        </button>
-    </div>
-    <p id="demo1"></p>
-    <p>
-        To check your answer, you can FOIL the binomials above and verify
-        that 
-        <br>
-        your answer results in the original problem that you started
-        with.
-        <br><br>
-        <p id="inputs1">
-            Remember: 
-            <span style="color:magenta">FOIL-ing</span> 
-            and 
-            <span style="color:magenta">Factoring</span> 
-            <br>
-            are 
-            <span style="text-decoration:underline">"Inverse Operations"</span>
-            <br>
-            Each one undoes the other.
-        </p>
-    </p>
-    <footer id="footer">
-        ©2019 ALL THINGS MATH   ALL RIGHTS RESERVED
-    </footer>
-
-    <script type="text/javascript" src="./script.js"></script>
-</body>
-</html> -->
+    

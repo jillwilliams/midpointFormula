@@ -1,7 +1,7 @@
 body { 
     margin: 15px 30px 25px 30px;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+    font-size: 2rem;
+    letter-spacing: 3px;
     background-color: black;
     color: aqua;
 }
@@ -12,7 +12,7 @@ body {
     width: 60%;
     height: auto;
     font-size: 1.5rem;
-    font-family: 'Dokdo', cursive;
+    font-family: 'Shadows Into Light', cursive;
     text-align: center;
     padding: 15px;
     margin-left: 20%;
@@ -25,7 +25,7 @@ p, #inputs1 {
     margin-left: 10%;
     margin-right: 10%;
     text-align: justify;
-    font-family: 'Dokdo', cursive;
+    font-family: 'Shadows Into Light', cursive;
 }
 /* IMAGE:    THE MIDPOINT FORMULA  */
 #midpointFormulaImg {
@@ -34,83 +34,6 @@ p, #inputs1 {
     margin-left: 40%;
     margin-right: 40%;
     margin-top: -30px;
-}
-/* <p> inputs1 TEXT: "TO LOCATE A POINT"... */
-/* #inputs1 {
-
-} */
-/* BUTTON TO OPEN THE MODAL BOX */
-#myButton {
-    width: 30%;
-    height: 70px;
-    color: black;
-    background-color: aqua;
-    border: 2px black solid;
-    outline: 1px violet solid;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-bottom: 25px;
-    font-family: 'Dokdo', cursive;
-    font-size: 1.5rem;
-    padding: 15px;
-}
-/* THE MODAL'S BACKGROUND */
-#myModal {
-    border: 1px black solid;
-    outline: 1px violet solid;
-    width: 70%;
-    font-family: 'Dokdo', cursive;
-    text-align: center;
-    padding: 15px;
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: aqua;
-    color: black;
-}
-/* THE MODAL'S BACKGROUND */
-.modal {
-    display: none;  /*hidden by default */
-    position: fixed;  /* stays in place */
-    z-index: 1;        /* on top of text/all */
-    left: 0;             
-    top: 0;
-    width: 100%; 
-    height: 100%;
-    overflow: auto;     /* enable scrolling abilities if needed */
-    background-color: pink;
-}
-/* MODAL BOX CONTENT */
-.modal-content {
-    background-color: #FEFEFE;
-    margin: 15% auto;
-    padding: 20px;
-    border: 2px solid blueviolet;
-    width: 80%;      /* this can be incr or decr depending on screen size */
-}
-/* THE CLOSE MODAL BUTTON */
-.close {
-    color: peru;
-    float: right;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-.close:hover, .close:focus {
-    color: yellow;
-    text-decoration: none;
-    cursor: pointer;
-}
-/* DIV ID TEXT: "SO WHAT WOULD YOUR NEW GRADE BE..." */
-#soWhat {
-    border: 1px black solid;
-    outline: 1px violet solid;
-    width: 70%;
-    font-family: 'Dokdo', cursive;
-    text-align: center;
-    padding: 15px;
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: aqua;
-    color: black;
 }
 /* IMAGE: DR FOR SICK DAY */
 #sickDay {
@@ -125,7 +48,7 @@ p, #inputs1 {
     border: 1px black solid;
     outline: 1px violet solid;
     width: 60%;
-    font-family: 'Dokdo', cursive;
+    font-family: 'Shadows Into Light', cursive;
     text-align: center;
     padding: 15px;
     margin-left: 20%;
@@ -133,6 +56,19 @@ p, #inputs1 {
     margin-top: -40px;
     background-color: aqua;
     color: black;
+}
+#p1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Shadows Into Light', cursive;
+
+}
+#pic1, #pic2, #pic3 {
+    border: 1px black solid;
+    outline: 2px violet solid;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 footer {
     font-size: 1rem;
