@@ -61,7 +61,6 @@ p, #inputs1 {
     text-align: center;
     text-decoration: underline;
     font-family: 'Shadows Into Light', cursive;
-
 }
 #pic1, #pic2, #pic3 {
     border: 1px black solid;
@@ -69,6 +68,11 @@ p, #inputs1 {
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
+}
+iframe {
+    margin: 15px 33% 15px 33%;
+    border: 1px black solid;
+    outline: 2px violet solid;
 }
 footer {
     font-size: 1rem;
